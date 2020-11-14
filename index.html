@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Interactive JavaScript Images</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row row-cols-1  pt-5">
+
+      <div class="col text-center">
+        <div>
+          <h1> Intro to Web Apps Javascript Image Manipulation </h1>
+          <p class="lead">By: Michael Owens </p>
+        </div>
+      </div>
+
+        <div class="col text-left pt-5">
+          <div>
+            <h1 class= "display-4">What is this page?</h1>
+            <p>This is a basic page written using the Bootstrap framework to demonstrate image manipulation with JavaScript events.</p>
+          </div>
+        </div>
+
+      </div><!-- Row -->
+
+      <div class="row row-cols-1 row-cols-lg-2 row-cols-md-1 pt-5">
+
+        <div class="col text-left">
+          <p class="font-weight-bold">My Dog Dolly</p>
+          <p>This is a picture of my dog Dolly. Dolly is a female Chihuahua and she is 6 years old. And yes, I do keep track of her with a smart Tile. Her digital representation is akin to her real life self in that if you click on her she will shrink (or tighten up) as Chihuahuas usually do. <p>
+        </div>
+
+        <div class="col">
+          <img src="images/my_dog.jpg" id="dolly" onmouseover="smallDolly(this)" onmouseout="regularDolly(this)" class="img-fluid rounded" alt="My dog Dolly">
+        </div>
+
+        <div class="col text-left pt-5 pb-5">
+          <p class="font-weight-bold">My Two Cars</p>
+          <p>This is a picture of one of my two cars. I bought both cars myself by working. The first is a Volkswagen Golf SportWagen 2.0 TDI (Turbo Diesel). if you click on the image, it will be replaced with my second car, a Volkswagen Eos 2.0 Turbo hard top coonvertable. There is no other car in the world that has a glass roof, a movable sunroof and is also a coonvertable. It is one of my "obtainable" dream cars.</p>
+        </div>
+
+        <div class="col pt-5 pb-5">
+          <img src="images/my_wagon.jpg" class="img-fluid rounded" id="myCars" alt="My Volkswagen SportWagen TDI" onclick="changeImage()" />
+        </div>
+
+      </div><!-- Row -->
+
+      <div class="row row-cols-1 pt-5">
+
+        <div class="col text-center">
+          <div>
+
+            <p class="lead font-weight-bold">All Images shot and owned by Michael Owens.</p>
+          </div>
+        </div>
+
+          <div class="col text-left pt-5 pb-5">
+            <div>
+              <h1 class= "display-4">Follow me on GitHub</h1>
+              <p>View this page on <a href="https://github.com/imichaelowens/js-project">my GitHub repo</a></p>
+            </div>
+          </div>
+
+        </div><!-- Row -->
+  </div><!-- Container -->
+</div>
+
+<script src="js/image.manipulation.js"></script>
+
+</body>
+</html>
