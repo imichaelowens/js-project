@@ -1,6 +1,6 @@
 function changeImage()
 {
-element=document.getElementById('myCars')
+element=document.getElementById('myCars');
 if (element.src.match("images/my_wagon.jpg"))
   {
   element.src="images/my_eos.jpg";
